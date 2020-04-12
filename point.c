@@ -9,7 +9,7 @@ void get_closest_food(Point food_points[], int points_length, Point current_loca
   double closest_distance, distance;
   
   for(int i = 0; i < points_length; i++){
-    distance = get_distance( food_points[i].x, food_points[i].y,current_location.x, current_location.y );
+    distance = get_distance(FOOD_POINT,CURRENT_LOCATION);
     if(i == 0 || distance < closest_distance) {
       closest_distance = distance;
       closest_food_location->x =  food_points[i].x;
