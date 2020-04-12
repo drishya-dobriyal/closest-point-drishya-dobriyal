@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "point.h"
 
 int main(void)
@@ -6,6 +7,6 @@ int main(void)
   Point current_location, closest_food_location;
   int points_length = sizeof(food_points) / sizeof(food_points[0]);
   printf("Enter Your co-ordinates :\n");
-  scanf("%d %d",current_location.x, current_location.y );
+  scanf("%d %d",&current_location.x, &current_location.y );
   return 0;
 }
