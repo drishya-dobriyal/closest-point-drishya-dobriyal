@@ -2,9 +2,9 @@
 #include "point.h"
 
 double get_distance(Point point1,Point point2 ) {
-  int x_distance = point1.x - point2.x;
-  int y_distance = point1.y - point2.y;
-  return sqrt(pow((x_distance), 2) + pow((y_distance), 2));
+  int x_difference = point1.x - point2.x;
+  int y_difference = point1.y - point2.y;
+  return sqrt(pow((x_difference), 2) + pow((y_difference), 2));
 }
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location){
